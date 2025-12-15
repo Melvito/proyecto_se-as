@@ -1,162 +1,221 @@
-body {
-  font-family: 'Poppins', sans-serif;
+/* ------------------------------
+   ESTILOS GENERALES
+--------------------------------*/
+* {
   margin: 0;
-  background-color: #f4f7f9;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
+body {
+  background: linear-gradient(135deg, #0e1220, #1a2333);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ------------------------------
+   NAVBAR
+--------------------------------*/
 header {
-  background-color: #1a73e8;
-  color: white;
-  padding: 15px 0;
-  position: sticky;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 nav ul {
   display: flex;
+  gap: 30px;
+}
+
+nav ul li {
   list-style: none;
-  gap: 20px;
 }
 
-nav a {
-  color: white;
+nav ul li a {
   text-decoration: none;
-  font-weight: 500;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #77c0ff;
 }
 
+/* ------------------------------
+   SECCIONES BASE
+--------------------------------*/
 .section {
-  padding: 60px 20px;
-  text-align: center;
+  padding: 130px 10%;
+  min-height: 100vh;
 }
 
-.inicio {
-  background-color: #eaf1fb;
+/* ------------------------------
+   INICIO
+--------------------------------*/
+.inicio .content {
+  max-width: 900px;
 }
 
+.inicio h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+/* Misión & Visión */
 .vision-mision {
+  margin-top: 40px;
   display: flex;
-  justify-content: center;
   gap: 40px;
-  margin-top: 30px;
-  flex-wrap: wrap;
 }
 
 .vision-mision div {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
-.aprende {
-  background-color: #fff;
+.vision-mision div:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
 }
 
-.galeria {
+.vision-mision h3 {
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   APRENDE – SECCIÓN
+--------------------------------*/
+.aprende-section {
+  text-align: center;
+  padding-top: 130px; /* evita que tape el navbar */
+}
+
+.aprende-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.aprende-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* IMAGEN TOTALMENTE CENTRADA */
+.imagen-central {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.card {
-  background: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  width: 150px;
-  text-align: center;
-}
-
-.card img {
+  align-items: center;
   width: 100%;
-  border-radius: 8px;
+}
+
+.imagen-central img {
+  width: 60%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.3);
+}
+
+/* ------------------------------
+   APP
+--------------------------------*/
+.app {
+  text-align: center;
 }
 
 .app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  margin-top: 30px;
+  width: 700px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.25);
 }
 
 #video {
-  border: 3px solid #1a73e8;
-  border-radius: 10px;
-  width: 320px;
-  height: 240px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background: #000;
 }
 
-button {
-  background-color: #1a73e8;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
+#resultado {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #77b4ff;
 }
 
-button:hover {
-  background-color: #1664c4;
-}
-
+/* ------------------------------
+   FOOTER
+--------------------------------*/
 footer {
-  background-color: #1a73e8;
-  color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px;
   margin-top: 40px;
+  opacity: 0.8;
+  font-size: 0.9rem;
 }
-  .aprende {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #f8f9fa;
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 850px) {
+  .vision-mision {
+    flex-direction: column;
   }
 
-  .aprende h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
+  nav ul {
+    gap: 15px;
   }
 
-  .aprende p {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 40px;
+  .inicio h1 {
+    font-size: 2.5rem;
   }
 
-  .imagen-central {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .app-container {
+    padding: 18px;
   }
 
   .imagen-central img {
-    width: 80%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    width: 85%;
   }
-
-  .imagen-central img:hover {
-    transform: scale(1.05);
-  }
+}
+   

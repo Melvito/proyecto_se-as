@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App - Detector de Señas</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">🤟 Innovaseñas</h2>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="aprende.html">Aprende</a></li>
+        <li><a href="app.html">Prueba la App</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="app-section">
+    <h1>Detector Automático de Señas</h1>
+    <p>La cámara se activará automáticamente y detectará la seña sin necesidad de botones.</p>
+
+    <div class="app-container">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" style="display:none;"></canvas>
+
+      <h3 id="resultado">Detectando...</h3>
+    </div>
+  </section>
+
+  <script src="web.js"></script>
+</body>
+</html>

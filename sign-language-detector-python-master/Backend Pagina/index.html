@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignoWEB - Inicio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0e1220, #1a2333);
+      color: #fff;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    header {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li { list-style: none; }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav ul li a:hover { color: #77c0ff; }
+
+    .section { padding: 130px 10%; }
+
+    /* INICIO */
+    .inicio h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .inicio p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    /* CUADRO INTEGRANTES */
+    .integrantes {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 18px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      backdrop-filter: blur(10px);
+    }
+
+    .integrantes h2 { margin-bottom: 15px; }
+
+    .integrantes p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+
+    /* TECNOLOGÍAS */
+    .tecnologias {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 18px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tecnologias h2 { margin-bottom: 10px; }
+
+    /* MISIÓN Y VISIÓN */
+    .vision-mision {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .vision-mision div {
+      width: 70%;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 18px;
+      transition: 0.3s;
+      backdrop-filter: blur(10px);
+    }
+
+    .vision-mision div:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 850px) {
+      .integrantes, .tecnologias, .vision-mision div {
+        width: 90%;
+      }
+      nav ul { gap: 15px; }
+      .inicio h1 { font-size: 2.3rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">🤟 Innovaseñas</h2>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="aprende.html">Aprende</a></li>
+        <li><a href="app.html">Prueba la App</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section inicio">
+    <h1>Conectamos Personas con Tecnología Inclusiva</h1>
+    <p>Nuestra plataforma utiliza inteligencia artificial para interpretar el lenguaje de señas en tiempo real.</p>
+
+    <div class="integrantes">
+      <p>Melvin Adiel Vasquez Mejia</p>
+      <p>Rey Arturo Cruz Peraza</p>
+    </div>
+
+    <div class="tecnologias">
+      <h2>Tecnologías Utilizadas</h2>
+      <p>HTML, CSS, JavaScript, Python, Inteligencia Artificial, TensorFlow, Mediapipe.</p>
+    </div>
+
+    <div class="vision-mision">
+      <div>
+        <h3>🎯 Misión</h3>
+        <p>Promover la inclusión mediante tecnologías accesibles, apoyando a comunidades con discapacidad auditiva.</p>
+      </div>
+
+      <div>
+        <h3>🌟 Visión</h3>
+        <p>Convertirnos en una herramienta educativa reconocida por su impacto social y accesibilidad universal.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SignoWEB | Inclusión Digital
+  </footer>
+</body>
+</html>
